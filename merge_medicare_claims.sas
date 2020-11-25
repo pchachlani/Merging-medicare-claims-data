@@ -2,7 +2,7 @@
 /*getting the BETOS CODES list*/
 
 Proc sql;
-	select quote(betos) intp: betos_cD_list separated by "," from cmn.betos_Cd;
+	select quote(betos) into: betos_cd_list separated by "," from cmn.betos_cd;
 quit;
 
 /*merging the episode level dataset with the chronic diagnosis codes and the medicare claims datasets */
