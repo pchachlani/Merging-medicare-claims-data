@@ -1,7 +1,7 @@
 /*Merging the Medicare claims data without sorting*/
 /*getting the BETOS CODES list*/
 
-Proc sql;
+proc sql;
 	select quote(betos) into: betos_cd_list separated by "," from cmn.betos_cd;
 quit;
 
